@@ -6,6 +6,21 @@ canvas.width = 1024
 
 canvas.height = 576
 
+const musicButton = document.getElementById('music-button')
+
+const jump = document.getElementById('jump')
+
+const coinSound = document.getElementById('coin-sound')
+
+const backMusic = document.getElementById ('background-music')
+
+
+musicButton.onclick = () => {
+    backMusic.pause()
+    jump.pause()
+    coinSound.pause()
+}
+
 function win() {
     c.font = "100px Silkscreen";
     c.textAlign = "left"
@@ -22,19 +37,18 @@ function lose() {
 
 const gravity = 1.5
 
-let count = 0
-
-let lifeCounts = 9
-
-let catNipCounts = 0
-
-const coinSound = document.getElementById('coin-sound')
-
+//Sounds
 const coinCount = document.getElementById('coin-count')
 
 const lifeCount = document.getElementById('life-count')
 
 const catNipCount = document.getElementById('cat-nip-count')
+
+let count = 0
+
+let lifeCounts = 9
+
+let catNipCounts = 0
 
 function coinCounter() {
     count++
@@ -53,7 +67,6 @@ function lifeCounter() {
         playerSpeed = 0
     }
 }
-
 
 lifeCount.innerText = lifeCounts
 
@@ -1965,7 +1978,7 @@ window.addEventListener('keydown', ({keyCode}) => {
             break
         case 87:
             console.log('up')
-            document.getElementById('jump').play()
+            jump.play()
             player.velocity.y = -20
             break
         case 83:

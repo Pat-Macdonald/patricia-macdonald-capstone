@@ -68,9 +68,18 @@ h2 {
 ul {
     list-style: none;
 }
+
  li {
     padding: 0.5rem 0;
- }
+}
+
+p {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: bisque;
+}
 
 div {
     background-color: black;
@@ -88,4 +97,9 @@ footer {
     font-family: "Silkscreen", sans-serif;
     color: bisque;
     padding-bottom: 1rem;
+    padding-top: 3rem;
+}
+
+footer p {
+    font-size: 1rem;
 }
