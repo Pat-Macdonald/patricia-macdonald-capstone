@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: black;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    background-image: url(../image/diagonal-paw.png);
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#cat-logo {
+    padding-left: 2rem;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: bisque;
+    padding-right: 2rem;
+}
+
+a:hover {
+    color:#FFD1DC;
+}
+
+nav {
+    display: flex;
+    justify-content:space-between;
+    text-align: flex-start;
+    color: bisque;
+    padding-top: 1rem;
+}
+
+h1 {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: bisque;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+
+h2 {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: bisque;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+ul {
+    list-style: none;
+}
+ li {
+    padding: 0.5rem 0;
+ }
+
+div {
+    background-color: black;
+    padding: 4rem;
+    border-radius: 2rem;
+    border: #FFD1DC 1rem solid;
+}
+
+iframe {
+    border-radius: 1rem;
+}
+
+footer {
+    text-align: center;
+    font-family: "Silkscreen", sans-serif;
+    color: bisque;
+    padding-bottom: 1rem;
+}
